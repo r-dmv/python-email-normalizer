@@ -1,0 +1,3 @@
+[run]
+source = email_normalizer
+omit = email_normalizer/base.py

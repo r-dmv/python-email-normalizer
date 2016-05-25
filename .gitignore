@@ -1,0 +1,23 @@
+# python compiled files
+*.py[co]
+# vim swap files
+*.sw[po]
+# gettext compiled messages
+*.mo
+
+#jetbrain ide
+.idea/
+#emacs
+/TAGS
+*_flymake.*
+
+env
+
+.tox/
+.coverage
+*.egg-info
+*.sqlite3
+
+.DS_Store
+dist
+*.egg-info
