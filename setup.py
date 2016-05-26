@@ -4,8 +4,9 @@ import setuptools
 def requirements_from_file(file_name):
     requirement = []
     with open(file_name, 'rb') as f:
-        for line in f:
-            requirement.append(line)
+        requirement.extend(f.read().split('\n'))
+
+    return requirement
 
 
 classifiers = [
@@ -24,7 +25,7 @@ classifiers = [
 
 setuptools.setup(
         name='python-email-normalizer',
-        version='0.1.3',
+        version='0.1.4',
         description='Normalize email addresses',
         long_description=open('README.md').read(),
         author='Rubtsov Dmitry',
